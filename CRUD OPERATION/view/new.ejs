@@ -6,9 +6,10 @@
     <title>Create New Post</title>
 </head>
 <body>
-    <form method="post" action="/posts">
+    <form method="post" action="/posts" enctype="multipart/form-data">
         <input placeholder="Enter username" name="username" required> <br> <br>
         <textarea placeholder="Write your post" name="content" required></textarea> <br> 
+        <input type="file" name="image" accept="image/*" required>
         <button type="submit">Submit Post</button>
     </form>
 </body>
